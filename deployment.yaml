@@ -12,14 +12,14 @@ spec:
       containers:
       - name: flask-api
         # Replace with your project ID
-        image: tyediel/flask-kubernetes-example
+        image: "tyediel/casestudy:latest"
         imagePullPolicy: Always
         resources:
           limits:
             cpu: 150m
-            memory: 200Mi
+            memory: 150Mi
           requests:
-            cpu: 150m
+            cpu: 100m
             memory: 100Mi
         ports:
         - containerPort: 5000
