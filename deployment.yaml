@@ -23,19 +23,19 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 5000
-        securityContext:
-          readOnlyRootFilesystem: true
+        #securityContext:
+          #readOnlyRootFilesystem: true
         #   runAsNonRoot: true
-        volumeMounts:
-        - name: tmp
-          mountPath: /tmp
-        - name: varrun
-          mountPath: /var/run
-      volumes:
-      - name: tmp
-        emptyDir:
-          medium: "Memory"
-      - name: varrun
-        emptyDir:
-          medium: "Memory"
+        #volumeMounts:
+        #- name: tmp
+          #mountPath: /tmp
+        #- name: varrun
+          #mountPath: /var/run
+      #volumes:
+      #- name: tmp
+        #emptyDir:
+          #medium: "Memory"
+      #- name: varrun
+        #emptyDir:
+          #medium: "Memory"
 
